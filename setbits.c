@@ -1,0 +1,19 @@
+// count the number of set bits 
+#include <stdio.h>
+
+int main() 
+{
+    int n;
+    printf("Enter the n value:");
+    scanf("%d",&n);
+    int count=0;
+    while(n>0)
+    {
+        n=n&(n-1);
+        count++;
+    }
+    
+    printf("count of set bits=%d",count);
+
+    return 0;
+}
